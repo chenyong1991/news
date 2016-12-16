@@ -1,37 +1,26 @@
 package com.example.news.fragmnet;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.example.news.R;
-import com.example.news.activity.WebActivity;
 import com.example.news.adapter.MyDatasListviewAdapter;
 import com.example.news.entity.NewsBean;
 import com.example.news.utils.Constant;
-import com.example.news.utils.GlideImageLoader;
 import com.example.news.utils.NoHttpInstance;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.rest.OnResponseListener;
 import com.yolanda.nohttp.rest.Request;
 import com.yolanda.nohttp.rest.Response;
-import com.youth.banner.Banner;
-import com.youth.banner.BannerConfig;
-import com.youth.banner.Transformer;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -44,7 +33,6 @@ public class NewsBeanFragmnet extends Fragment {
     private List<NewsBean.ResultBean.DataBean> datas;
 
     private int type = 0;//新闻类型
-    private SwipeRefreshLayout refreshLayout;
     private MyDatasListviewAdapter adapter;
 
     public NewsBeanFragmnet(int type) {
@@ -55,13 +43,15 @@ public class NewsBeanFragmnet extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        refreshLayout = (SwipeRefreshLayout) inflater.inflate(R.layout.layout_newsbean_fragment_activity_main, null);
+        listview = (ListView) inflater.inflate(R.layout.layout_newsbean_fragment_activity_main,null);
+
+        /*refreshLayout = (SwipeRefreshLayout) inflater.inflate(R.layout.layout_newsbean_fragment_activity_main, null);
 
         Toast.makeText(getContext(), "onCreate" + type, Toast.LENGTH_SHORT).show();
 
-        listview = (ListView) refreshLayout.findViewById(R.id.listview);
+        listview = (ListView) refreshLayout.findViewById(R.id.listview);*/
 
-        Banner banner = new Banner(getContext());
+        /*Banner banner = new Banner(getContext());
         AbsListView.LayoutParams params = new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 500);
         banner.setLayoutParams(params);
         banner.setImageLoader(new GlideImageLoader());
@@ -81,9 +71,9 @@ public class NewsBeanFragmnet extends Fragment {
         banner.setBannerTitles(titles);
         banner.setIndicatorGravity(BannerConfig.CENTER);
         banner.start();
-        listview.addHeaderView(banner);
+        listview.addHeaderView(banner);*/
 
-        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        /*refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
 
@@ -108,9 +98,9 @@ public class NewsBeanFragmnet extends Fragment {
                 }).start();
 
             }
-        });
+        });*/
 
-        return refreshLayout;
+        return listview;
     }
 
     @Override
@@ -141,7 +131,6 @@ public class NewsBeanFragmnet extends Fragment {
                 listview.setAdapter(adapter);
             }
 
-
             @Override
             public void onFailed(int what, Response<String> response) {
 
@@ -154,14 +143,6 @@ public class NewsBeanFragmnet extends Fragment {
             @Override
             public void onFinish(int what) {
 
-            }
-        });
-
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(NewsBeanFragmnet.this.getContext(), WebActivity.class);
-                startActivity(intent);
             }
         });
 

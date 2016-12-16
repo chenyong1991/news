@@ -1,7 +1,0 @@
-#Thu Dec 15 15:41:07 CST 2016
-base.0=D\:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_73fc21ae2f7f283a1f161ba894b2d565415a5839
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=D\:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_4f72ee64993c2c96f2dcbcd3ee9d0a092990f7c1\\classes.dex
-base.1=D\:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_4f72ee64993c2c96f2dcbcd3ee9d0a092990f7c1
-file.0=D\:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_73fc21ae2f7f283a1f161ba894b2d565415a5839\\classes.dex

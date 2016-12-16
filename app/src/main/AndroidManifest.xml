@@ -26,10 +26,6 @@
 
         </activity>
         <activity android:name=".activity.LeadActivity" />
-        <activity android:name=".activity.WebActivity">
-
-
-        </activity>
     </application>
 
 </manifest>
