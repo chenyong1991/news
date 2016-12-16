@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\layout\\need_this_for_maven.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pullToRefreshListFragment\\src\\main\\res\\layout\\need_this_for_maven.xml"
+    },
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    }
+]

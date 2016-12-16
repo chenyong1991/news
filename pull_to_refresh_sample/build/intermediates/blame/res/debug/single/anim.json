@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_top.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pull_to_refresh_sample\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\anim\\slide_out_to_bottom.xml"
+    }
+]

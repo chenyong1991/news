@@ -1,0 +1,96 @@
+{
+    "project_type": "gradle",
+    "android_gradle_plugin_version": "2.2.3",
+    "freeline_gradle_plugin_version": "0.8.3",
+    "java_home": "D:\\programs\\AndroidStudio\\jre",
+    "freeline_cache_dir": "D:\\study\\study\\android_demo\\news",
+    "auto_dependency": true,
+    "product_flavor": "",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "root_dir": "D:\\study\\study\\android_demo\\news",
+    "main_project_name": "app",
+    "main_project_dir": "app",
+    "build_directory": "D:\\study\\study\\android_demo\\news\\app\\build",
+    "build_cache_dir": "D:\\study\\study\\android_demo\\news\\app\\build\\freeline",
+    "build_tools_version": "24.0.2",
+    "sdk_directory": "D:\\programs\\AndroidSDK",
+    "build_tools_directory": "D:\\programs\\AndroidSDK\\build-tools\\24.0.2",
+    "compile_sdk_version": "android-24",
+    "compile_sdk_directory": "D:\\programs\\AndroidSDK\\platforms\\android-24",
+    "package": "com.example.news",
+    "debug_package": "com.example.news",
+    "main_manifest_path": "D:\\study\\study\\android_demo\\news\\app\\src\\main\\AndroidManifest.xml",
+    "launcher": "com.example.news.activity.LogoActivity",
+    "apk_path": "D:\\study\\study\\android_demo\\news\\app\\build\\outputs\\apk\\app-debug.apk",
+    "extra_dep_res_paths": [
+        
+    ],
+    "exclude_dep_res_paths": [
+        
+    ],
+    "main_r_path": "D:\\study\\study\\android_demo\\news\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "use_jdk8": true,
+    "main_src_directory": [
+        "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\java",
+        "D:\\study\\study\\android_demo\\news\\app\\src\\main\\java"
+    ],
+    "main_res_directory": [
+        "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\res",
+        "D:\\study\\study\\android_demo\\news\\app\\src\\main\\res"
+    ],
+    "main_assets_directory": [
+        "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\assets",
+        "D:\\study\\study\\android_demo\\news\\app\\src\\main\\assets"
+    ],
+    "main_jni_directory": [
+        "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\jni",
+        "D:\\study\\study\\android_demo\\news\\app\\src\\main\\jni"
+    ],
+    "main_jniLibs_directory": [
+        "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\jniLibs",
+        "D:\\study\\study\\android_demo\\news\\app\\src\\main\\jniLibs"
+    ],
+    "project_source_sets": {
+        "app": {
+            "main_src_directory": [
+                "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\java",
+                "D:\\study\\study\\android_demo\\news\\app\\src\\main\\java"
+            ],
+            "main_res_directory": [
+                "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\res",
+                "D:\\study\\study\\android_demo\\news\\app\\src\\main\\res"
+            ],
+            "main_assets_directory": [
+                "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\assets",
+                "D:\\study\\study\\android_demo\\news\\app\\src\\main\\assets"
+            ],
+            "main_jni_directory": [
+                "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\jni",
+                "D:\\study\\study\\android_demo\\news\\app\\src\\main\\jni"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\study\\study\\android_demo\\news\\app\\src\\debug\\jniLibs",
+                "D:\\study\\study\\android_demo\\news\\app\\src\\main\\jniLibs"
+            ],
+            "main_manifest_path": "D:\\study\\study\\android_demo\\news\\app\\src\\main\\AndroidManifest.xml"
+        }
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "D:\\study\\study\\android_demo\\news\\app"
+        }
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ]
+}

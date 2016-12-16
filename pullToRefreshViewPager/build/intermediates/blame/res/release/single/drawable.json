@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\news\\library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]
