@@ -1,8 +1,10 @@
 package com.example.news.fragmnet;
 
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +31,8 @@ import java.util.List;
 
 public class NewsBeanFragmnet extends Fragment {
 
+    private SwipeRefreshLayout layout;
+
     private ListView listview;
     private List<NewsBean.ResultBean.DataBean> datas;
 
@@ -43,7 +47,36 @@ public class NewsBeanFragmnet extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        listview = (ListView) inflater.inflate(R.layout.layout_newsbean_fragment_activity_main,null);
+        layout = (SwipeRefreshLayout) inflater.inflate(R.layout.layout_newsbean_fragment_activity_main,null);
+
+        listview = (ListView) layout.findViewById(R.id.listview_news_fragment_activity_main);
+
+        layout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        SystemClock.sleep(2000);
+                        //getDatasFromNet
+                        adapter.datas.remove(0);
+
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                adapter.notifyDataSetChanged();
+                                layout.setRefreshing(false);
+
+                            }
+                        });
+
+                    }
+                }).start();
+
+            }
+        });
+
 
         /*refreshLayout = (SwipeRefreshLayout) inflater.inflate(R.layout.layout_newsbean_fragment_activity_main, null);
 
@@ -100,7 +133,7 @@ public class NewsBeanFragmnet extends Fragment {
             }
         });*/
 
-        return listview;
+        return layout;
     }
 
     @Override
