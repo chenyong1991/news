@@ -47,6 +47,7 @@ public class NewsBeanFragmnet extends Fragment {
 
     private int type = 0;//新闻类型
     private MyDatasListviewAdapter adapter;
+    private Banner banner;
 
     public NewsBeanFragmnet(int type) {
         this.type = type;
@@ -86,7 +87,7 @@ public class NewsBeanFragmnet extends Fragment {
             }
         });
 
-        Banner banner = new Banner(getContext());
+        banner = new Banner(getContext());
         //width? height?   往一个容器里面添加view params
         AbsListView.LayoutParams params = new AbsListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT,500);
         //把参数赋值给banner
@@ -213,11 +214,29 @@ public class NewsBeanFragmnet extends Fragment {
 
                 Intent intent = new Intent(getActivity(), WebActivity.class);
                 String url = datas.get(position - 1).getUrl();
+                String img_url = datas.get(position - 1).getThumbnail_pic_s();
                 intent.putExtra("url",url);
+                intent.putExtra("img_url",img_url);
                 startActivity(intent);
 
             }
         });
 
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        //开始轮播
+        banner.startAutoPlay();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        //结束轮播
+        banner.stopAutoPlay();
+
+    }
+
 }

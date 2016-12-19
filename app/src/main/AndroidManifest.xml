@@ -24,7 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.LeadActivity" />
-        <activity android:name=".activity.WebActivity"></activity>
+        <activity
+            android:name=".activity.WebActivity"
+            android:theme="@style/myTheme" />
+        <activity android:name=".activity.InfoActivity"></activity>
     </application>
 
 </manifest>

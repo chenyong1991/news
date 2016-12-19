@@ -3,17 +3,27 @@ package com.example.news.activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.bumptech.glide.Glide;
 import com.example.news.R;
+import com.example.news.utils.NoHttpInstance;
+import com.yolanda.nohttp.NoHttp;
+import com.yolanda.nohttp.rest.OnResponseListener;
+import com.yolanda.nohttp.rest.Request;
+import com.yolanda.nohttp.rest.Response;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,6 +36,10 @@ public class WebActivity extends AppCompatActivity {
     Toolbar toolbarActivityWeb;
     @BindView(R.id.progress_activity_web)
     ProgressBar progressActivityWeb;
+    @BindView(R.id.iv_toolbar_activity_web)
+    ImageView ivToolbarActivityWeb;
+    @BindView(R.id.collapse_toolbar_activity_web)
+    CollapsingToolbarLayout collapseToolbarActivityWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +58,39 @@ public class WebActivity extends AppCompatActivity {
 
         }
 
-
         Intent intent = getIntent();
         String url = intent.getStringExtra("url");
+        String img_url = intent.getStringExtra("img_url");
+        Glide.with(this).load(img_url).into(ivToolbarActivityWeb);
+
+        Request<Bitmap> imageRequest = NoHttp.createImageRequest(img_url);
+        NoHttpInstance.getInstance().add(0, imageRequest, new OnResponseListener<Bitmap>() {
+            @Override
+            public void onStart(int what) {
+
+            }
+
+            @Override
+            public void onSucceed(int what, Response<Bitmap> response) {
+
+                int vibrantColor = Palette.from(response.get()).generate().getVibrantColor(getResources().getColor(R.color.colorPrimary));
+
+                collapseToolbarActivityWeb.setContentScrimColor(vibrantColor);
+
+
+            }
+
+            @Override
+            public void onFailed(int what, Response<Bitmap> response) {
+
+            }
+
+            @Override
+            public void onFinish(int what) {
+
+            }
+        });
+
 
         //config  setting设置类
         WebSettings settings = webviewActivityWeb.getSettings();
@@ -57,6 +101,13 @@ public class WebActivity extends AppCompatActivity {
         webviewActivityWeb.loadUrl(url);
         webviewActivityWeb.setWebChromeClient(new WebChromeClient() {
 
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                super.onReceivedTitle(view, title);
+
+                collapseToolbarActivityWeb.setTitle(title);
+
+            }
         });
         webviewActivityWeb.setWebViewClient(new WebViewClient() {
 
@@ -74,9 +125,22 @@ public class WebActivity extends AppCompatActivity {
 
     }
 
-    @Override
+    /*@Override
     public boolean onSupportNavigateUp() {
         finish();
         return super.onSupportNavigateUp();
+    }*/
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case android.R.id.home:
+                finish();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

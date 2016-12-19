@@ -1,5 +1,6 @@
 package com.example.news.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -11,6 +12,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import com.example.news.R;
@@ -24,6 +26,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
     FrameLayout flContentActivityMain;
     @BindView(R.id.navigetion_activity_main)
     NavigationView navigetionActivityMain;
+
+    private CircleImageView circleImageView;
+
     private FragmentManager fragmentManager;
 
     private List<Fragment> fragmentList;
@@ -48,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        circleImageView = (CircleImageView) navigetionActivityMain.getHeaderView(0).findViewById(R.id.profile_image);
 
         toolbarActivityMain.setTitle("新闻");
         toolbarActivityMain.setLogo(R.mipmap.ic_launcher);
@@ -141,6 +149,17 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this,InfoActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 

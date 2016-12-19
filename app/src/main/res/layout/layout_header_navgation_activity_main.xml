@@ -5,10 +5,14 @@
     android:gravity="center"
     android:layout_height="280dp">
 
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@mipmap/ic_launcher"
-        android:id="@+id/imageView" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_width="2dp"
+        android:clickable="true"
+        app:civ_border_color="#FF000000"/>
 
 </LinearLayout>

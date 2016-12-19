@@ -8,6 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">true</item>
+
     </style>
+
+    <style name="myTheme" parent="AppTheme">
+
+    </style>
+
+
 
 </resources>
