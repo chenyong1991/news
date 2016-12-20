@@ -3,6 +3,7 @@ package com.example.news.activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.TextInputEditText;
@@ -20,6 +21,7 @@ import com.example.news.App;
 import com.example.news.R;
 import com.wilddog.wilddogauth.core.Task;
 import com.wilddog.wilddogauth.core.listener.OnCompleteListener;
+import com.wilddog.wilddogauth.core.request.UserProfileChangeRequest;
 import com.wilddog.wilddogauth.core.result.AuthResult;
 import com.wilddog.wilddogauth.model.WilddogUser;
 
@@ -38,6 +40,7 @@ public class InfoActivity extends AppCompatActivity {
     TextInputEditText etPasswordActivityInfo;
     @BindView(R.id.et_password_layout_activity_info)
     TextInputLayout etPasswordLayoutActivityInfo;
+    private WilddogUser curUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,8 +116,8 @@ public class InfoActivity extends AppCompatActivity {
                     public void onComplete(Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // 获取用户
-                            WilddogUser user = task.getResult().getWilddogUser();
-                            App.user = user;
+                            curUser = task.getResult().getWilddogUser();
+                            App.user = curUser;
                         } else {
                             // 错误处理
                             Log.d("result", task.getException().toString());
@@ -133,14 +136,14 @@ public class InfoActivity extends AppCompatActivity {
         App.auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onComplete( Task<AuthResult> task) {
+                    public void onComplete(Task<AuthResult> task) {
                         Log.d(InfoActivity.class.getName(), "signInWithEmail:onComplete:" + task.isSuccessful());
                         if (!task.isSuccessful()) {
                             Log.w(InfoActivity.class.getName(), "signInWithEmail", task.getException());
                             Toast.makeText(InfoActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                        }else {
-
+                        } else {
+                            //设置头像
                             showDialog();
 
                         }
@@ -175,12 +178,14 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     private void fromGallery() {
+
+
     }
 
     private void fromCamera() {
         //
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent,0);
+        startActivityForResult(intent, 0);
 
     }
 
@@ -188,22 +193,54 @@ public class InfoActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == 0 && resultCode == RESULT_OK){
+        if (requestCode == 0 && resultCode == RESULT_OK) {
 
             Bundle extras = data.getExtras();
 
             Bitmap bitmap = (Bitmap) extras.get("data");
             //bitmap不能直接上传到云端，因为网络传输图片时，会有些字符无法识别，acsii 128 % & *  大小写字母+ + -  26+26+2 = 64  base64
             //如果遇到网络图片传输问题，首先要把图片进行base64转化  ascii  base64 iso-8859-1 utf-8
-            //都是 二进制  0101 0101 1011 1010 1101010101   8 * 8  = 3 + 3 = 6
-            //ascii 8位
-            //base64 6位
+            //都是 二进制  010101 011011 101011 010101 01   8 * 8  = 3 + 3 = 6
+            //ascii 8位  ???????  烫烫
+            //base64 6位  64个字符，大小写英文字母 + -
 
             //把bitmap转化字符串，字符串就可以在网络上传输
             ByteArrayOutputStream out = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.PNG,100,out);
-            String imgStr = Base64.encodeToString(out.toByteArray(), Base64.DEFAULT);
-            App.ref.child(App.user.getUid()).setValue(imgStr);
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+            final String imgStr = Base64.encodeToString(out.toByteArray(), Base64.DEFAULT);
+
+            if (App.user != null) {
+
+                App.ref.child(App.user.getUid()).setValue(imgStr);
+                //更新用户信息
+                WilddogUser user = App.user;
+                UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                        .setPhotoUri(Uri.parse(curUser.getUid()))
+                        .build();
+                user.updateProfile(profileUpdates)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    // 更新成功
+                                    Intent intent = new Intent();
+                                    intent.putExtra("data", imgStr);
+                                    setResult(RESULT_OK, intent);
+                                    finish();
+
+                                } else {
+                                    // 发生错误
+                                }
+                            }
+                        });
+
+
+            } else {
+
+                Toast.makeText(this, "用户未登陆", Toast.LENGTH_SHORT).show();
+
+            }
+
 
         }
 

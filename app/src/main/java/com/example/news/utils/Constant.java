@@ -36,5 +36,9 @@ public interface Constant {
      */
     String[] TITLES = {"头条","社会","国内","国际","娱乐","体育","军事","科技","财经","时尚"};
 
+    int GET_IMAGE_FROM_CAMERA = 0;
+    int GET_IMAGE_FROM_GALLERY = 1;
+    int GET_IMAGE_FROM_SERVICE = 2;
+
 
 }

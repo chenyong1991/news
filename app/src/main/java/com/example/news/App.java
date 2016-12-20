@@ -1,6 +1,7 @@
 package com.example.news;
 
 import android.app.Application;
+import android.widget.Toast;
 
 import com.wilddog.client.SyncReference;
 import com.wilddog.client.WilddogSync;
@@ -32,6 +33,18 @@ public class App extends Application {
         auth = WilddogAuth.getInstance();
         // 获取 SyncReference 实例
         ref = WilddogSync.getInstance().getReference("users");
+        //拿到当前用户
+        WilddogUser currentUser = auth.getCurrentUser();
+        if(currentUser != null){
+
+            user = currentUser;
+
+        }else {
+
+            Toast.makeText(this, "用户未登录", Toast.LENGTH_SHORT).show();
+
+        }
+
 
     }
 }
