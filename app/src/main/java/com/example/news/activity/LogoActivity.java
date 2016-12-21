@@ -35,36 +35,44 @@ public class LogoActivity extends AppCompatActivity {
             switch (msg.what) {
 
                 case 0:
-                    if(leftTime > 0){// 3   2  1 0 -1
-
-                        String newText = "广告倒计时：" + leftTime-- + "秒";
-                        tvLeftTimeActivityLogo.setText(newText);
-                        handler.sendEmptyMessageDelayed(0,1000);
-
-                    }else {
-
-                        boolean booleanFromSp = CacheUtil.getBooleanFromSp(LogoActivity.this, CacheUtil.IS_FIRST, true);
-
-                        if(booleanFromSp){
-
-                            Intent intent = new Intent(LogoActivity.this,LeadActivity.class);
-                            startActivity(intent);
-                            finish();
-
-                        }else {
-
-                            Intent intent = new Intent(LogoActivity.this,MainActivity.class);
-                            startActivity(intent);
-                            finish();
-
-                        }
-
-                    }
+                    //计算广告倒计时时间
+                    calcLeftTime();
                     break;
             }
 
         }
     };
+
+    /**
+     * 计算倒计时时间
+     */
+    private void calcLeftTime() {
+        if(leftTime > 0){// 3   2  1 0 -1
+
+            String newText = "广告倒计时：" + leftTime-- + "秒";
+            tvLeftTimeActivityLogo.setText(newText);
+            handler.sendEmptyMessageDelayed(0,1000);
+
+        }else {
+
+            boolean booleanFromSp = CacheUtil.getBooleanFromSp(LogoActivity.this, CacheUtil.IS_FIRST, true);
+
+            if(booleanFromSp){
+
+                Intent intent = new Intent(LogoActivity.this,LeadActivity.class);
+                startActivity(intent);
+                finish();
+
+            }else {
+
+                Intent intent = new Intent(LogoActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +84,9 @@ public class LogoActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 初始化动画
+     */
     private void initAnimation() {
 
         AlphaAnimation alphaAnimation = new AlphaAnimation(0, 1);

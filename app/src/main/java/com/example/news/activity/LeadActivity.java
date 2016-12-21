@@ -36,14 +36,19 @@ public class LeadActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         //初始化视图数据
         initData();
-        //initIndicator
+        //初始化指示器
         initIndicator();
+        //设置适配器
         MyPagerAdapter adapter = new MyPagerAdapter();
         pvLead.setAdapter(adapter);
+        //初始化监听器
         pvLead.setOnPageChangeListener(new MyPagerListener());
 
     }
 
+    /**
+     * 初始化指示器
+     */
     private void initIndicator() {
 
         for (int i = 0; i < imgs.length; i++) {
@@ -72,6 +77,9 @@ public class LeadActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 初始化视图数据
+     */
     private void initData() {
 
         imgs[0] = R.mipmap.bd;

@@ -3,8 +3,10 @@ package com.example.news.activity;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -22,6 +24,7 @@ import android.util.Base64;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.example.news.App;
 import com.example.news.R;
@@ -73,101 +76,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
-        circleImageView = (CircleImageView) navigetionActivityMain.getHeaderView(0).findViewById(R.id.profile_image);
-
-        toolbarActivityMain.setTitle("新闻");
-        toolbarActivityMain.setLogo(R.mipmap.ic_launcher);
-        toolbarActivityMain.setNavigationIcon(R.mipmap.ic_launcher);
-        setSupportActionBar(toolbarActivityMain);
+        //初始化toolbar
+        initToolbar();
         //初始化片段管理者
-        fragmentManager = getSupportFragmentManager();
-        //初始化所有的fragment
-        fragmentList = new ArrayList<>();
-        fragmentList.add(new NewsFragmnet());
-        fragmentList.add(new ImageFragmnet());
-        fragmentList.add(new LikeFragmnet());
-        fragmentList.add(new ChatFragmnet());
+        initFragments();
+        //初始化导航视图
+        initNavgetionview();
+        //初始化野狗
+        initWilddog();
+    }
 
-        //默认选择新闻
-        navigetionActivityMain.setCheckedItem(R.id.new_navgation);
-        //默认切换第一个fragment
-        currFragment = fragmentList.get(0);
-        fragmentManager.beginTransaction().add(R.id.fl_content_activity_main, currFragment).commit();
-
-        //切换toggle,使toolbar和侧拉菜单关联起来
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, activityMain, toolbarActivityMain, R.string.open, R.string.close);
-        toggle.syncState();
-        //侧拉菜单的点击事件
-        navigetionActivityMain.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                int index = 0;
-
-                switch (item.getItemId()) {
-
-                    case R.id.new_navgation:
-                        index = 0;
-                        toolbarActivityMain.setTitle("新闻");
-                        break;
-                    case R.id.image_navgation:
-                        index = 1;
-                        toolbarActivityMain.setTitle("图片");
-                        break;
-                    case R.id.like_navgation:
-                        index = 2;
-                        toolbarActivityMain.setTitle("收藏");
-                        break;
-                    case R.id.chat_navgation:
-                        index = 3;
-                        toolbarActivityMain.setTitle("聊天");
-                        break;
-
-                }
-                //打开管理事务
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                //切换fragment
-
-                Fragment nextFragment = fragmentList.get(index);
-
-                if (nextFragment != currFragment) {
-
-                    if (!nextFragment.isAdded()) {
-
-                        if (currFragment != null) {
-
-                            transaction.hide(currFragment);
-
-                        }
-                        transaction.add(R.id.fl_content_activity_main, nextFragment);
-
-                    } else {
-
-                        if (currFragment != null) {
-
-                            transaction.hide(currFragment);
-
-                        }
-
-                        transaction.show(nextFragment);
-
-                    }
-
-                    currFragment = nextFragment;
-
-                }
-
-                //transaction.replace(R.id.fl_content_activity_main,fragmentList.get(index));
-                //一定要提交，坑爹啊
-                transaction.commit();
-                //关闭侧拉菜单
-                activityMain.closeDrawers();
-
-                return true;
-            }
-        });
-
+    /**
+     * 初始化wilddong
+     */
+    private void initWilddog() {
         WilddogUser user = App.user;//user = null;
 
         circleImageView.setOnClickListener(new View.OnClickListener() {
@@ -198,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
 
-                    String imgStr = (String) dataSnapshot.child(uid).getValue();
+                    String imgStr = (String) dataSnapshot.getValue();
 
                     //把string转化成bitmap
                     byte[] decode = Base64.decode(imgStr, Base64.DEFAULT);
@@ -215,8 +137,130 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
             //给当前数据库设置数据改变监听器
-            App.ref.addValueEventListener(postListener);
+            App.ref.child(App.user.getUid()).addValueEventListener(postListener);
         }
+    }
+
+    /**
+     * 初始化导航视图
+     */
+    private void initNavgetionview() {
+
+        circleImageView = (CircleImageView) navigetionActivityMain.getHeaderView(0).findViewById(R.id.profile_image);
+        //默认切换第一个fragment
+        navigetionActivityMain.setCheckedItem(R.id.new_navgation);
+        currFragment = fragmentList.get(0);
+        fragmentManager.beginTransaction().add(R.id.fl_content_activity_main, currFragment).commit();
+        //切换toggle,使toolbar和侧拉菜单关联起来
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, activityMain, toolbarActivityMain, R.string.open, R.string.close);
+        toggle.syncState();
+        //侧拉菜单的点击事件
+        initNavgetionviewListener();
+    }
+
+    /**
+     * 初始化导航视图的监听事件
+     */
+    private void initNavgetionviewListener() {
+        navigetionActivityMain.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                int index = 0;
+
+                switch (item.getItemId()) {
+
+                    case R.id.new_navgation:
+                        index = 0;
+                        toolbarActivityMain.setTitle("新闻");
+                        break;
+                    case R.id.image_navgation:
+                        index = 1;
+                        toolbarActivityMain.setTitle("图片");
+                        break;
+                    case R.id.like_navgation:
+                        index = 2;
+                        toolbarActivityMain.setTitle("收藏");
+                        break;
+                    case R.id.chat_navgation:
+                        index = 3;
+                        toolbarActivityMain.setTitle("聊天");
+                        break;
+
+                }
+                //切换片段
+                replaceFragment(index);
+
+                return true;
+            }
+        });
+    }
+
+    /**
+     * 切换片段
+     * @param index
+     */
+    private void replaceFragment(int index) {
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        //切换fragment
+
+        Fragment nextFragment = fragmentList.get(index);
+
+        if (nextFragment != currFragment) {
+
+            if (!nextFragment.isAdded()) {
+
+                if (currFragment != null) {
+
+                    transaction.hide(currFragment);
+
+                }
+                transaction.add(R.id.fl_content_activity_main, nextFragment);
+
+            } else {
+
+                if (currFragment != null) {
+
+                    transaction.hide(currFragment);
+
+                }
+
+                transaction.show(nextFragment);
+
+            }
+
+            currFragment = nextFragment;
+
+        }
+
+        //transaction.replace(R.id.fl_content_activity_main,fragmentList.get(index));
+        //一定要提交，坑爹啊
+        transaction.commit();
+        //关闭侧拉菜单
+        activityMain.closeDrawers();
+    }
+
+    /**
+     * 初始化所有片段
+     */
+    private void initFragments() {
+        fragmentManager = getSupportFragmentManager();
+        //初始化所有的fragment
+        fragmentList = new ArrayList<>();
+        fragmentList.add(new NewsFragmnet());
+        fragmentList.add(new ImageFragmnet());
+        fragmentList.add(new LikeFragmnet());
+        fragmentList.add(new ChatFragmnet());
+    }
+
+    /**
+     * 初始化toolbar
+     */
+    private void initToolbar() {
+        toolbarActivityMain.setTitle("新闻");
+        toolbarActivityMain.setLogo(R.mipmap.ic_launcher);
+        toolbarActivityMain.setNavigationIcon(R.mipmap.ic_launcher);
+        setSupportActionBar(toolbarActivityMain);
     }
 
     @Override
@@ -255,17 +299,45 @@ public class MainActivity extends AppCompatActivity {
             ContentResolver contentResolver = getContentResolver();
 
             try {
-                InputStream inputStream = contentResolver.openInputStream(imgUri);
+                //非常大的图片流
+                InputStream in = contentResolver.openInputStream(imgUri);
 
-                Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+                Rect rect = new Rect(0,0,96,96);
+                BitmapFactory.Options opts = new BitmapFactory.Options();
+
+                opts.inSampleSize = 5;
+                //对流压缩处理
+                Bitmap bitmap = BitmapFactory.decodeStream(in, rect, opts);
 
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 10, out);
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+
                 String imgStr = Base64.encodeToString(out.toByteArray(), Base64.DEFAULT);
+
                 App.ref.child(App.user.getUid()).setValue(imgStr);
+
                 circleImageView.setImageBitmap(bitmap);
 
-            } catch (FileNotFoundException e) {
+               /* Cursor cusor = contentResolver.query(imgUri, null, null, null, null);
+
+                cusor.moveToFirst();
+
+                String path = cusor.getString(1);
+                String string = cusor.getString(0);
+                String string1 = cusor.getString(2);
+                String string2 = cusor.getString(3);
+
+
+                BitmapFactory.Options opts = new BitmapFactory.Options();
+                //采样值,缩放比例
+                opts.inSampleSize = 50;//  真实的图片  imageview  ： 拿到真实图片的宽高和控件的宽高来比较，获取压缩比例
+
+                Bitmap bitmap = BitmapFactory.decodeFile("data/data/com.example.news/temp.jpg", opts);
+
+                circleImageView.setImageBitmap(bitmap);*/
+
+
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 

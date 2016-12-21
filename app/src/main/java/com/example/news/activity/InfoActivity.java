@@ -47,7 +47,16 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
         ButterKnife.bind(this);
+        //初始化编辑文本监听器
+        initEditTextListener();
 
+
+    }
+
+    /**
+     * 初始化文本监听器
+     */
+    private void initEditTextListener() {
         etEmailActivityInfo.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -101,10 +110,12 @@ public class InfoActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 
+    /**
+     * 注册功能
+     * @param v
+     */
     public void register(View v) {
 
         String email = etEmailActivityInfo.getText().toString().trim();
@@ -128,6 +139,10 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 登录功能
+     * @param v
+     */
     public void login(View v) {
 
         String email = etEmailActivityInfo.getText().toString().trim();
@@ -152,6 +167,9 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 显示选择头像对话框
+     */
     private void showDialog() {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -177,11 +195,17 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 从图库获取图片
+     */
     private void fromGallery() {
 
 
     }
 
+    /**
+     * 从相机获取图片
+     */
     private void fromCamera() {
         //
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

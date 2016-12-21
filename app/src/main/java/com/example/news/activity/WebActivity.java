@@ -46,18 +46,56 @@ public class WebActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         ButterKnife.bind(this);
+        //初始化toolbar
+        initToolbar();
+        //初始化可折叠的toolbar
+        String url = initCollapseToolbar();
+        //初始化webview
+        initWebview(url);
 
-        setSupportActionBar(toolbarActivityWeb);//把actionbar替换成toolbar
+    }
 
-        ActionBar supportActionBar = getSupportActionBar();
+    /**
+     * 初始化webview
+     * @param url
+     */
+    private void initWebview(String url) {
+        WebSettings settings = webviewActivityWeb.getSettings();
+        //settings.setSupportZoom(true);
+        settings.setJavaScriptEnabled(true);//javascript  js脚本，web前端的脚本语言  html5 响应式布局 pc  移动段
 
-        if (supportActionBar != null) {
 
-            supportActionBar.setHomeButtonEnabled(true);
-            supportActionBar.setDisplayHomeAsUpEnabled(true);
+        webviewActivityWeb.loadUrl(url);
+        webviewActivityWeb.setWebChromeClient(new WebChromeClient() {
 
-        }
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                super.onReceivedTitle(view, title);
 
+                collapseToolbarActivityWeb.setTitle(title);
+
+            }
+        });
+        webviewActivityWeb.setWebViewClient(new WebViewClient() {
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                progressActivityWeb.setVisibility(View.INVISIBLE);
+            }
+        });
+    }
+
+    /**
+     * 初始化可折叠的toolbar
+     * @return
+     */
+    private String initCollapseToolbar() {
         Intent intent = getIntent();
         String url = intent.getStringExtra("url");
         String img_url = intent.getStringExtra("img_url");
@@ -90,39 +128,23 @@ public class WebActivity extends AppCompatActivity {
 
             }
         });
+        return url;
+    }
 
+    /**
+     * 初始化toolbar
+     */
+    private void initToolbar() {
+        setSupportActionBar(toolbarActivityWeb);//把actionbar替换成toolbar
 
-        //config  setting设置类
-        WebSettings settings = webviewActivityWeb.getSettings();
-        //settings.setSupportZoom(true);
-        settings.setJavaScriptEnabled(true);//javascript  js脚本，web前端的脚本语言  html5 响应式布局 pc  移动段
+        ActionBar supportActionBar = getSupportActionBar();
 
+        if (supportActionBar != null) {
 
-        webviewActivityWeb.loadUrl(url);
-        webviewActivityWeb.setWebChromeClient(new WebChromeClient() {
+            supportActionBar.setHomeButtonEnabled(true);
+            supportActionBar.setDisplayHomeAsUpEnabled(true);
 
-            @Override
-            public void onReceivedTitle(WebView view, String title) {
-                super.onReceivedTitle(view, title);
-
-                collapseToolbarActivityWeb.setTitle(title);
-
-            }
-        });
-        webviewActivityWeb.setWebViewClient(new WebViewClient() {
-
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                super.onPageStarted(view, url, favicon);
-            }
-
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-                progressActivityWeb.setVisibility(View.INVISIBLE);
-            }
-        });
-
+        }
     }
 
     /*@Override
