@@ -2,6 +2,7 @@ package com.example.news.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.news.R;
 import com.example.news.entity.NewsBean;
+import com.example.news.utils.CacheUtil;
 import com.example.news.utils.NoHttpInstance;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.rest.OnResponseListener;
@@ -100,6 +102,19 @@ public class MyDatasListviewAdapter extends BaseAdapter {
 
             }
         });*/
+
+        String readedUrl = CacheUtil.getStringFromSp(context, CacheUtil.READED);
+
+        if(readedUrl.contains(datas.get(position).getUrl())){
+
+            holder.tv_title.setTextColor(Color.GRAY);
+        }else {
+
+            holder.tv_title.setTextColor(Color.BLACK);
+
+        }
+
+
         Glide.with(context).load(datas.get(position).getThumbnail_pic_s()).crossFade().into(holder.iv_pic);
 
         holder.tv_title.setText(datas.get(position).getTitle());

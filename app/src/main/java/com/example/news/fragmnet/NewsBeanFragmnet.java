@@ -7,7 +7,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
@@ -20,10 +23,14 @@ import com.alibaba.fastjson.JSON;
 import com.example.news.R;
 import com.example.news.activity.WebActivity;
 import com.example.news.adapter.MyDatasListviewAdapter;
+import com.example.news.db.MyNewsOrmliteOpenHelper;
+import com.example.news.entity.News;
 import com.example.news.entity.NewsBean;
+import com.example.news.utils.CacheUtil;
 import com.example.news.utils.Constant;
 import com.example.news.utils.GlideImageLoader;
 import com.example.news.utils.NoHttpInstance;
+import com.j256.ormlite.dao.Dao;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.rest.OnResponseListener;
 import com.yolanda.nohttp.rest.Request;
@@ -31,6 +38,7 @@ import com.yolanda.nohttp.rest.Response;
 import com.youth.banner.Banner;
 import com.youth.banner.Transformer;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,6 +56,7 @@ public class NewsBeanFragmnet extends Fragment {
     private int type = 0;//新闻类型
     private MyDatasListviewAdapter adapter;
     private Banner banner;
+    private Dao<News, Long> dao;
 
     public NewsBeanFragmnet(int type) {
         this.type = type;
@@ -60,6 +69,8 @@ public class NewsBeanFragmnet extends Fragment {
         layout = (SwipeRefreshLayout) inflater.inflate(R.layout.layout_newsbean_fragment_activity_main,null);
 
         listview = (ListView) layout.findViewById(R.id.listview_news_fragment_activity_main);
+
+        //registerForContextMenu(listview);
 
         layout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -214,6 +225,14 @@ public class NewsBeanFragmnet extends Fragment {
 
                 Intent intent = new Intent(getActivity(), WebActivity.class);
                 String url = datas.get(position - 1).getUrl();
+
+                String readedUrl = CacheUtil.getStringFromSp(getContext(), CacheUtil.READED);
+                // htt1,     htttp1,http2,   http2,
+                readedUrl = readedUrl + url + ",";
+
+                CacheUtil.putStringIntoSp(getContext(),CacheUtil.READED,readedUrl);
+                adapter.notifyDataSetChanged();
+
                 String img_url = datas.get(position - 1).getThumbnail_pic_s();
                 intent.putExtra("url",url);
                 intent.putExtra("img_url",img_url);
@@ -222,7 +241,59 @@ public class NewsBeanFragmnet extends Fragment {
             }
         });
 
+        listview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                NewsBean.ResultBean.DataBean dataBean = adapter.datas.get(position - 1);
+
+                News news = new News(dataBean.getThumbnail_pic_s(),dataBean.getTitle(),dataBean.getDate(),dataBean.getUrl());
+
+
+                try {
+
+                    dao = MyNewsOrmliteOpenHelper.getInstance(getContext()).getDao(News.class);
+
+                    dao.createIfNotExists(news);
+
+                    List<News> newses = dao.queryForAll();// 0 1 2 3 4
+
+                    Toast.makeText(getContext(), newses.get(0).getTitle(), Toast.LENGTH_SHORT).show();
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
+                return true;
+            }
+        });
+
     }
+
+    /*@Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        getActivity().getMenuInflater().inflate(R.menu.menu_news_fragmnet_activity_main,menu);
+
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+
+        switch (item.getItemId()) {
+            case R.id.menu_collect:
+
+                NewsBean.ResultBean.DataBean dataBean = adapter.datas.get(info.position - 1);
+
+                Toast.makeText(getContext(), dataBean.getTitle(), Toast.LENGTH_SHORT).show();
+
+                break;
+        }
+
+        return super.onContextItemSelected(item);
+    }*/
 
     @Override
     public void onResume() {

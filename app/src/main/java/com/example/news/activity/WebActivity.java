@@ -147,12 +147,6 @@ public class WebActivity extends AppCompatActivity {
         }
     }
 
-    /*@Override
-    public boolean onSupportNavigateUp() {
-        finish();
-        return super.onSupportNavigateUp();
-    }*/
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 

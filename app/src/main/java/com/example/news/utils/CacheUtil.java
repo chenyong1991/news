@@ -11,6 +11,7 @@ public class CacheUtil {
 
     public static String CONFIG = "config";
     public static String IS_FIRST = "is_first";
+    public static String READED = "readed";
 
     public static void putBooleanIntoSp(Context context, String key, boolean b){
 
@@ -26,5 +27,21 @@ public class CacheUtil {
         return sp.getBoolean(key,b);
 
     }
+
+    public static void putStringIntoSp(Context context, String key, String s){
+
+        SharedPreferences sp = context.getSharedPreferences(CONFIG, Context.MODE_PRIVATE);
+        sp.edit().putString(key,s).commit();
+
+    }
+
+    public static String getStringFromSp(Context context,String key){
+
+        SharedPreferences sp = context.getSharedPreferences(CONFIG, Context.MODE_PRIVATE);
+
+        return sp.getString(key,"");// ""  null
+
+    }
+
 
 }
