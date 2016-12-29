@@ -8,7 +8,7 @@ import com.j256.ormlite.table.DatabaseTable;
  */
 @DatabaseTable(tableName = "news_database.db")
 public class News {
-    @DatabaseField(columnName = "_id",generatedId = true)
+    @DatabaseField(columnName = "_id",id = true)
     private long _id;
     @DatabaseField(columnName = "img")
     private String img;
@@ -22,7 +22,8 @@ public class News {
     public News() {
     }
 
-    public News(String img, String title, String date, String url) {
+    public News(long _id, String img, String title, String date, String url) {
+        this._id = _id;
         this.img = img;
         this.title = title;
         this.date = date;

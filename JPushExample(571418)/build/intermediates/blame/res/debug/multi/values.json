@@ -1,0 +1,319 @@
+[
+    {
+        "outputFile": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 228,
+                        "endColumn": 57,
+                        "endOffset": 281
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 51,
+                    "endOffset": 160
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 51,
+                        "endOffset": 156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 165,
+                    "endColumn": 55,
+                    "endOffset": 216
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 390,
+                        "endColumn": 55,
+                        "endOffset": 441
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 221,
+                    "endColumn": 61,
+                    "endOffset": 278
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 61,
+                        "endOffset": 607
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 283,
+                    "endColumn": 55,
+                    "endOffset": 334
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 334,
+                        "endColumn": 55,
+                        "endOffset": 385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 339,
+                    "endColumn": 51,
+                    "endOffset": 386
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 446,
+                        "endColumn": 51,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 391,
+                    "endColumn": 51,
+                    "endOffset": 438
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 51,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 443,
+                    "endColumn": 53,
+                    "endOffset": 492
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 497,
+                    "endColumn": 52,
+                    "endOffset": 545
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 612,
+                        "endColumn": 52,
+                        "endOffset": 660
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 550,
+                    "endColumn": 43,
+                    "endOffset": 589
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 665,
+                        "endColumn": 43,
+                        "endOffset": 704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 594,
+                    "endColumn": 47,
+                    "endOffset": 637
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 286,
+                        "endColumn": 47,
+                        "endOffset": 329
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 642,
+                    "endColumn": 66,
+                    "endOffset": 704
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 66,
+                        "endOffset": 223
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 709,
+                    "endLine": 23,
+                    "endColumn": 12,
+                    "endOffset": 1272
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\jpush_style.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 114,
+                        "endLine": 11,
+                        "endColumn": 12,
+                        "endOffset": 677
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1277,
+                    "endLine": 27,
+                    "endColumn": 9,
+                    "endOffset": 1410
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\style.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 1,
+                        "startOffset": 295,
+                        "endLine": 10,
+                        "endColumn": 9,
+                        "endOffset": 428
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1415,
+                    "endLine": 32,
+                    "endColumn": 9,
+                    "endOffset": 1595
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\style.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 3,
+                        "startOffset": 113,
+                        "endLine": 6,
+                        "endColumn": 9,
+                        "endOffset": 293
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1600,
+                    "endLine": 36,
+                    "endColumn": 9,
+                    "endOffset": 1729
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\JPushExample(571418)\\res\\values\\style.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 1,
+                        "startOffset": 430,
+                        "endLine": 14,
+                        "endColumn": 9,
+                        "endOffset": 559
+                    }
+                }
+            }
+        ]
+    }
+]

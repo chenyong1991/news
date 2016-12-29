@@ -1,1 +1,1 @@
-include ':app', ':recyclerview', ':ormlite'
+include ':app', ':recyclerview', ':ormlite', ':JPushExample(571418)', ':shared_app'

@@ -1,0 +1,1795 @@
+[
+    {
+        "outputFile": "D:\\study\\study\\android_demo\\news\\shared_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 81,
+                    "endOffset": 132
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_color_drawables.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 81,
+                        "endOffset": 134
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 137,
+                    "endColumn": 81,
+                    "endOffset": 214
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_color_drawables.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 140,
+                        "endColumn": 81,
+                        "endOffset": 217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 219,
+                    "endColumn": 46,
+                    "endOffset": 261
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 114,
+                        "endColumn": 46,
+                        "endOffset": 156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 266,
+                    "endColumn": 46,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 46,
+                        "endOffset": 203
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 313,
+                    "endColumn": 46,
+                    "endOffset": 355
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 46,
+                        "endOffset": 250
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 360,
+                    "endColumn": 46,
+                    "endOffset": 402
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 255,
+                        "endColumn": 46,
+                        "endOffset": 297
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 407,
+                    "endColumn": 49,
+                    "endOffset": 452
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 302,
+                        "endColumn": 49,
+                        "endOffset": 347
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 457,
+                    "endColumn": 57,
+                    "endOffset": 510
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 57,
+                        "endOffset": 109
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 515,
+                    "endColumn": 45,
+                    "endOffset": 556
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 3726,
+                        "endColumn": 45,
+                        "endOffset": 3767
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 561,
+                    "endColumn": 86,
+                    "endOffset": 643
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1295,
+                        "endColumn": 86,
+                        "endOffset": 1377
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 648,
+                    "endColumn": 53,
+                    "endOffset": 697
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 3773,
+                        "endColumn": 53,
+                        "endOffset": 3822
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 702,
+                    "endColumn": 45,
+                    "endOffset": 743
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 1,
+                        "startOffset": 3073,
+                        "endColumn": 42,
+                        "endOffset": 3114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 748,
+                    "endColumn": 42,
+                    "endOffset": 786
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 1,
+                        "startOffset": 2200,
+                        "endColumn": 39,
+                        "endOffset": 2238
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 791,
+                    "endColumn": 48,
+                    "endOffset": 835
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 1,
+                        "startOffset": 2654,
+                        "endColumn": 45,
+                        "endOffset": 2698
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 840,
+                    "endColumn": 41,
+                    "endOffset": 877
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 1,
+                        "startOffset": 1958,
+                        "endColumn": 38,
+                        "endOffset": 1995
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 882,
+                    "endColumn": 46,
+                    "endOffset": 924
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 1,
+                        "startOffset": 2285,
+                        "endColumn": 43,
+                        "endOffset": 2327
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 929,
+                    "endColumn": 50,
+                    "endOffset": 975
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 1,
+                        "startOffset": 1778,
+                        "endColumn": 47,
+                        "endOffset": 1824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 980,
+                    "endColumn": 69,
+                    "endOffset": 1045
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 3556,
+                        "endColumn": 69,
+                        "endOffset": 3621
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1050,
+                    "endColumn": 108,
+                    "endOffset": 1154
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1383,
+                        "endColumn": 108,
+                        "endOffset": 1487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1159,
+                    "endColumn": 46,
+                    "endOffset": 1201
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 1,
+                        "startOffset": 2564,
+                        "endColumn": 43,
+                        "endOffset": 2606
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1206,
+                    "endColumn": 54,
+                    "endOffset": 1256
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 1,
+                        "startOffset": 2423,
+                        "endColumn": 51,
+                        "endOffset": 2473
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1261,
+                    "endColumn": 102,
+                    "endOffset": 1359
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 327,
+                        "endColumn": 102,
+                        "endOffset": 425
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1364,
+                    "endColumn": 51,
+                    "endOffset": 1411
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 1,
+                        "startOffset": 2373,
+                        "endColumn": 48,
+                        "endOffset": 2420
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1416,
+                    "endColumn": 52,
+                    "endOffset": 1464
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 1,
+                        "startOffset": 2745,
+                        "endColumn": 49,
+                        "endOffset": 2793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1469,
+                    "endColumn": 103,
+                    "endOffset": 1568
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 621,
+                        "endColumn": 103,
+                        "endOffset": 720
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1573,
+                    "endColumn": 83,
+                    "endOffset": 1652
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 1,
+                        "startOffset": 3471,
+                        "endColumn": 80,
+                        "endOffset": 3550
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1657,
+                    "endLine": 93,
+                    "endColumn": 9,
+                    "endOffset": 3537
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_instapaper_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endLine": 68,
+                        "endColumn": 12,
+                        "endOffset": 1870
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 3542,
+                    "endColumn": 54,
+                    "endOffset": 3592
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 1,
+                        "startOffset": 3211,
+                        "endColumn": 51,
+                        "endOffset": 3261
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 3597,
+                    "endColumn": 52,
+                    "endOffset": 3645
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 1,
+                        "startOffset": 3264,
+                        "endColumn": 49,
+                        "endOffset": 3312
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 3650,
+                    "endColumn": 52,
+                    "endOffset": 3698
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 1,
+                        "startOffset": 3364,
+                        "endColumn": 49,
+                        "endOffset": 3412
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 3703,
+                    "endColumn": 57,
+                    "endOffset": 3756
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 1,
+                        "startOffset": 3415,
+                        "endColumn": 54,
+                        "endOffset": 3468
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 3761,
+                    "endColumn": 50,
+                    "endOffset": 3807
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 1,
+                        "startOffset": 3315,
+                        "endColumn": 47,
+                        "endOffset": 3361
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 3812,
+                    "endColumn": 43,
+                    "endOffset": 3851
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 1,
+                        "startOffset": 1916,
+                        "endColumn": 40,
+                        "endOffset": 1955
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 3856,
+                    "endColumn": 54,
+                    "endOffset": 3906
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 1,
+                        "startOffset": 2979,
+                        "endColumn": 51,
+                        "endOffset": 3029
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 3911,
+                    "endColumn": 104,
+                    "endOffset": 4011
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1002,
+                        "endColumn": 104,
+                        "endOffset": 1102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 4016,
+                    "endColumn": 52,
+                    "endOffset": 4064
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 1,
+                        "startOffset": 2928,
+                        "endColumn": 49,
+                        "endOffset": 2976
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 4069,
+                    "endColumn": 101,
+                    "endOffset": 4166
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 899,
+                        "endColumn": 101,
+                        "endOffset": 996
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 4171,
+                    "endColumn": 43,
+                    "endOffset": 4210
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 3627,
+                        "endColumn": 43,
+                        "endOffset": 3666
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 4215,
+                    "endColumn": 85,
+                    "endOffset": 4296
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1208,
+                        "endColumn": 85,
+                        "endOffset": 1289
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 4301,
+                    "endColumn": 52,
+                    "endOffset": 4349
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 3672,
+                        "endColumn": 52,
+                        "endOffset": 3720
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 4354,
+                    "endColumn": 42,
+                    "endOffset": 4392
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 1,
+                        "startOffset": 3032,
+                        "endColumn": 39,
+                        "endOffset": 3070
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 4397,
+                    "endColumn": 86,
+                    "endOffset": 4479
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 811,
+                        "endColumn": 86,
+                        "endOffset": 893
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 4484,
+                    "endColumn": 44,
+                    "endOffset": 4524
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 1,
+                        "startOffset": 2330,
+                        "endColumn": 41,
+                        "endOffset": 2370
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 4529,
+                    "endColumn": 43,
+                    "endOffset": 4568
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 1,
+                        "startOffset": 2886,
+                        "endColumn": 40,
+                        "endOffset": 2925
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 4573,
+                    "endColumn": 59,
+                    "endOffset": 4628
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 1,
+                        "startOffset": 4037,
+                        "endColumn": 56,
+                        "endOffset": 4092
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 4633,
+                    "endColumn": 54,
+                    "endOffset": 4683
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 1,
+                        "startOffset": 2147,
+                        "endColumn": 51,
+                        "endOffset": 2197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 4688,
+                    "endColumn": 46,
+                    "endOffset": 4730
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 336,
+                        "endColumn": 46,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 4735,
+                    "endColumn": 47,
+                    "endOffset": 4778
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 439,
+                        "endColumn": 47,
+                        "endOffset": 482
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 4783,
+                    "endColumn": 49,
+                    "endOffset": 4828
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 488,
+                        "endColumn": 49,
+                        "endOffset": 533
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 4833,
+                    "endColumn": 53,
+                    "endOffset": 4882
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 384,
+                        "endColumn": 53,
+                        "endOffset": 433
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 4887,
+                    "endColumn": 57,
+                    "endOffset": 4940
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 539,
+                        "endColumn": 57,
+                        "endOffset": 592
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 4945,
+                    "endColumn": 52,
+                    "endOffset": 4993
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 1,
+                        "startOffset": 654,
+                        "endColumn": 49,
+                        "endOffset": 702
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 4998,
+                    "endColumn": 60,
+                    "endOffset": 5054
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 1,
+                        "startOffset": 595,
+                        "endColumn": 57,
+                        "endOffset": 651
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 5059,
+                    "endColumn": 45,
+                    "endOffset": 5100
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 45,
+                        "endOffset": 98
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 5105,
+                    "endColumn": 57,
+                    "endOffset": 5158
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 277,
+                        "endColumn": 57,
+                        "endOffset": 330
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 5163,
+                    "endColumn": 57,
+                    "endOffset": 5216
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 218,
+                        "endColumn": 57,
+                        "endOffset": 271
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 5221,
+                    "endColumn": 54,
+                    "endOffset": 5271
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 162,
+                        "endColumn": 54,
+                        "endOffset": 212
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 5276,
+                    "endColumn": 56,
+                    "endOffset": 5328
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_oks_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 104,
+                        "endColumn": 56,
+                        "endOffset": 156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 5333,
+                    "endColumn": 52,
+                    "endOffset": 5381
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 1,
+                        "startOffset": 2513,
+                        "endColumn": 49,
+                        "endOffset": 2561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 5386,
+                    "endColumn": 103,
+                    "endOffset": 5485
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 516,
+                        "endColumn": 103,
+                        "endOffset": 615
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 5490,
+                    "endColumn": 44,
+                    "endOffset": 5530
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 3828,
+                        "endColumn": 44,
+                        "endOffset": 3868
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 5535,
+                    "endColumn": 46,
+                    "endOffset": 5577
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 1,
+                        "startOffset": 3166,
+                        "endColumn": 43,
+                        "endOffset": 3208
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 5582,
+                    "endColumn": 38,
+                    "endOffset": 5616
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 1,
+                        "startOffset": 2476,
+                        "endColumn": 35,
+                        "endOffset": 2510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 5621,
+                    "endColumn": 83,
+                    "endOffset": 5700
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 431,
+                        "endColumn": 83,
+                        "endOffset": 510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 5705,
+                    "endColumn": 43,
+                    "endOffset": 5744
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 1,
+                        "startOffset": 1591,
+                        "endColumn": 40,
+                        "endOffset": 1630
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 5749,
+                    "endColumn": 43,
+                    "endOffset": 5788
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 1,
+                        "startOffset": 1874,
+                        "endColumn": 40,
+                        "endOffset": 1913
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 5793,
+                    "endColumn": 62,
+                    "endOffset": 5851
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 1,
+                        "startOffset": 3976,
+                        "endColumn": 59,
+                        "endOffset": 4034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 5856,
+                    "endColumn": 63,
+                    "endOffset": 5915
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 1,
+                        "startOffset": 4149,
+                        "endColumn": 60,
+                        "endOffset": 4208
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 5920,
+                    "endColumn": 55,
+                    "endOffset": 5971
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 1,
+                        "startOffset": 4095,
+                        "endColumn": 52,
+                        "endOffset": 4146
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 5976,
+                    "endColumn": 50,
+                    "endOffset": 6022
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 1,
+                        "startOffset": 3927,
+                        "endColumn": 47,
+                        "endOffset": 3973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 6027,
+                    "endColumn": 55,
+                    "endOffset": 6078
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 1,
+                        "startOffset": 3873,
+                        "endColumn": 52,
+                        "endOffset": 3924
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 6083,
+                    "endColumn": 63,
+                    "endOffset": 6142
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 1,
+                        "startOffset": 4211,
+                        "endColumn": 60,
+                        "endOffset": 4270
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 6147,
+                    "endColumn": 48,
+                    "endOffset": 6191
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 1,
+                        "startOffset": 1998,
+                        "endColumn": 45,
+                        "endOffset": 2042
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 6196,
+                    "endColumn": 47,
+                    "endOffset": 6239
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 1,
+                        "startOffset": 1496,
+                        "endColumn": 44,
+                        "endOffset": 1539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 6244,
+                    "endColumn": 51,
+                    "endOffset": 6291
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 1,
+                        "startOffset": 2045,
+                        "endColumn": 48,
+                        "endOffset": 2092
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 6296,
+                    "endColumn": 53,
+                    "endOffset": 6345
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 1,
+                        "startOffset": 2095,
+                        "endColumn": 50,
+                        "endOffset": 2144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 6350,
+                    "endColumn": 50,
+                    "endOffset": 6396
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 1,
+                        "startOffset": 1542,
+                        "endColumn": 47,
+                        "endOffset": 1588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 6401,
+                    "endColumn": 46,
+                    "endOffset": 6443
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 1,
+                        "startOffset": 2609,
+                        "endColumn": 43,
+                        "endOffset": 2651
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 6448,
+                    "endColumn": 48,
+                    "endOffset": 6492
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 1,
+                        "startOffset": 1827,
+                        "endColumn": 45,
+                        "endOffset": 1871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 6497,
+                    "endColumn": 59,
+                    "endOffset": 6552
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 1,
+                        "startOffset": 4273,
+                        "endColumn": 56,
+                        "endOffset": 4328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 6557,
+                    "endColumn": 45,
+                    "endOffset": 6598
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 1,
+                        "startOffset": 2701,
+                        "endColumn": 42,
+                        "endOffset": 2742
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 148,
+                    "startColumn": 4,
+                    "startOffset": 6603,
+                    "endColumn": 59,
+                    "endOffset": 6658
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 118,
+                        "endColumn": 59,
+                        "endOffset": 173
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 149,
+                    "startColumn": 4,
+                    "startOffset": 6663,
+                    "endColumn": 44,
+                    "endOffset": 6703
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 1,
+                        "startOffset": 1633,
+                        "endColumn": 41,
+                        "endOffset": 1673
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 150,
+                    "startColumn": 4,
+                    "startOffset": 6708,
+                    "endColumn": 86,
+                    "endOffset": 6790
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 239,
+                        "endColumn": 86,
+                        "endOffset": 321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 6795,
+                    "endColumn": 52,
+                    "endOffset": 6843
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 1,
+                        "startOffset": 1727,
+                        "endColumn": 49,
+                        "endOffset": 1775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 152,
+                    "startColumn": 4,
+                    "startOffset": 6848,
+                    "endColumn": 52,
+                    "endOffset": 6896
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 1,
+                        "startOffset": 1676,
+                        "endColumn": 49,
+                        "endOffset": 1724
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 153,
+                    "startColumn": 4,
+                    "startOffset": 6901,
+                    "endColumn": 59,
+                    "endOffset": 6956
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 59,
+                        "endOffset": 112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 6961,
+                    "endColumn": 58,
+                    "endOffset": 7015
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 179,
+                        "endColumn": 58,
+                        "endOffset": 233
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 155,
+                    "startColumn": 4,
+                    "startOffset": 7020,
+                    "endColumn": 50,
+                    "endOffset": 7066
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 1,
+                        "startOffset": 3117,
+                        "endColumn": 47,
+                        "endOffset": 3163
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 7071,
+                    "endColumn": 98,
+                    "endOffset": 7165
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1108,
+                        "endColumn": 98,
+                        "endOffset": 1202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 7170,
+                    "endColumn": 41,
+                    "endOffset": 7207
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 1,
+                        "startOffset": 2796,
+                        "endColumn": 38,
+                        "endOffset": 2833
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 158,
+                    "startColumn": 4,
+                    "startOffset": 7212,
+                    "endColumn": 83,
+                    "endOffset": 7291
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 726,
+                        "endColumn": 83,
+                        "endOffset": 805
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 7296,
+                    "endColumn": 51,
+                    "endOffset": 7343
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 1,
+                        "startOffset": 2836,
+                        "endColumn": 48,
+                        "endOffset": 2883
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 160,
+                    "startColumn": 4,
+                    "startOffset": 7348,
+                    "endColumn": 45,
+                    "endOffset": 7389
+                },
+                "from": {
+                    "file": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\values\\ssdk_strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 1,
+                        "startOffset": 2241,
+                        "endColumn": 42,
+                        "endOffset": 2282
+                    }
+                }
+            }
+        ]
+    }
+]

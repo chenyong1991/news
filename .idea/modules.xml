@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JPushExample(571418)/JPushExample(571418).iml" filepath="$PROJECT_DIR$/JPushExample(571418)/JPushExample(571418).iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/news.iml" filepath="$PROJECT_DIR$/news.iml" />
       <module fileurl="file://$PROJECT_DIR$/ormlite/ormlite.iml" filepath="$PROJECT_DIR$/ormlite/ormlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared_app/shared_app.iml" filepath="$PROJECT_DIR$/shared_app/shared_app.iml" />
     </modules>
   </component>
 </project>

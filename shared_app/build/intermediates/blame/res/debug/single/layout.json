@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\shared_app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\study\\study\\android_demo\\news\\shared_app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_derect_share.xml",
+        "source": "D:\\study\\study\\android_demo\\news\\shared_app\\src\\main\\res\\layout\\activity_derect_share.xml"
+    }
+]

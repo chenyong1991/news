@@ -11,6 +11,10 @@ import com.wilddog.wilddogcore.WilddogApp;
 import com.wilddog.wilddogcore.WilddogOptions;
 import com.yolanda.nohttp.NoHttp;
 
+import cn.jpush.android.api.JPushInterface;
+import cn.sharesdk.framework.ShareSDK;
+import cn.smssdk.SMSSDK;
+
 /**
  * Created by c8469 on 2016/12/13.
  */
@@ -45,6 +49,12 @@ public class App extends Application {
 
         }
 
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
+
+        ShareSDK.initSDK(this);
+
+        SMSSDK.initSDK(this, "1a3c0feb12cac", "573e88e623218799b1ed2b1f0be5ffba");
 
     }
 }

@@ -75,33 +75,7 @@ public class MyDatasListviewAdapter extends BaseAdapter {
 
         }
 
-        //初始化数据->
-        /*final ImageView iv = holder.iv_pic;
-        Request<Bitmap> imageRequest = NoHttp.createImageRequest(datas.get(position).getThumbnail_pic_s());
 
-        NoHttpInstance.getInstance().add(1, imageRequest, new OnResponseListener<Bitmap>() {
-            @Override
-            public void onStart(int what) {
-
-            }
-
-            @Override
-            public void onSucceed(int what, Response<Bitmap> response) {
-
-                iv.setImageBitmap(response.get());
-
-            }
-
-            @Override
-            public void onFailed(int what, Response<Bitmap> response) {
-
-            }
-
-            @Override
-            public void onFinish(int what) {
-
-            }
-        });*/
 
         String readedUrl = CacheUtil.getStringFromSp(context, CacheUtil.READED);
 

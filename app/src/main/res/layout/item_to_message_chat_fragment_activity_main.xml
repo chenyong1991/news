@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|right"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_chatto_chat_fragment_activity_main"
+        android:layout_width="wrap_content"
+        android:maxWidth="300dp"
+        android:layout_height="wrap_content"
+
+        android:text="你好,我聊天机器人方式范德萨发的是飞洒发士大夫的萨芬撒地方的撒旦法萨芬师傅的说法撒范德萨发！"
+        android:background="@drawable/chatto_bg_focused"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+
+
+</LinearLayout>

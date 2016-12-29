@@ -1,0 +1,319 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:2:1-161:12
+	package
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:3:5-31
+	android:versionName
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:5:5-32
+		INJECTED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml
+		INJECTED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:4:5-30
+		INJECTED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml
+		INJECTED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:7:5-73
+	android:targetSdkVersion
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:7:41-70
+	android:minSdkVersion
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:7:15-40
+permission#com.example.news.permission.JPUSH_MESSAGE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:10:5-12:47
+	android:protectionLevel
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:11:9-65
+uses-permission#com.example.news.permission.JPUSH_MESSAGE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:16:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:17:5-67
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:17:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:18:5-68
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:18:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:19:5-75
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:19:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:21:5-80
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:21:22-77
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:22:5-73
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:22:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:23:5-66
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:23:22-63
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:24:5-84
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:24:22-81
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:25:5-79
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:26:5-76
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:26:22-73
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:31:5-78
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:31:22-75
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:32:5-81
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:32:22-78
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:33:5-76
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:33:22-73
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:34:5-79
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:34:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:35:5-89
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:35:22-86
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:36:5-79
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:36:22-76
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:37:5-68
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:37:22-65
+application
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:39:5-160:19
+	android:label
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:41:9-41
+	android:icon
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:40:9-45
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:42:9-64
+activity#com.example.jpushdemo.MainActivity
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:45:9-52:20
+	android:label
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:47:13-45
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:46:13-62
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:48:13-51:29
+action#android.intent.action.MAIN
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:49:17-69
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:49:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:50:17-77
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:50:27-74
+activity#com.example.jpushdemo.PushSetActivity
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:54:8-115
+	android:label
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:54:71-103
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:54:18-70
+activity#com.example.jpushdemo.SettingActivity
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:56:8-115
+	android:label
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:56:71-103
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:56:18-70
+activity#com.example.jpushdemo.TestActivity
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:58:9-63:20
+	android:exported
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:58:69-93
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:58:19-68
+intent-filter#jpush.testAction+jpush.testCategory
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:59:13-62:29
+action#jpush.testAction
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:60:17-59
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:60:25-56
+category#jpush.testCategory
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:61:17-63
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:61:27-60
+activity#cn.jpush.android.ui.PopWinActivity
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:66:9-70:20
+	android:exported
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:69:13-37
+	android:theme
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:68:13-49
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:67:13-62
+activity#cn.jpush.android.ui.PushActivity
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:73:9-83:20
+	android:exported
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:77:13-37
+	android:configChanges
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:75:13-63
+	android:theme
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:76:13-60
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:74:13-60
+intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.example.news
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:78:13-82:29
+action#cn.jpush.android.ui.PushActivity
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:79:17-75
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:79:25-72
+category#android.intent.category.DEFAULT
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:80:17-76
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:80:27-73
+category#com.example.news
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:81:17-61
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:81:27-58
+service#cn.jpush.android.service.DownloadService
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:85:9-89:19
+	android:enabled
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:87:13-35
+	android:exported
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:88:13-37
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:86:13-68
+service#cn.jpush.android.service.PushService
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:93:9-102:19
+	android:process
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:95:13-36
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:94:13-64
+intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:96:13-101:29
+action#cn.jpush.android.intent.REGISTER
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:97:17-75
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:97:25-72
+action#cn.jpush.android.intent.REPORT
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:98:17-73
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:98:25-70
+action#cn.jpush.android.intent.PushService
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:99:17-78
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:99:25-75
+action#cn.jpush.android.intent.PUSH_TIME
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:100:17-76
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:100:25-73
+service#cn.jpush.android.service.DaemonService
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:106:9-115:19
+	android:enabled
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:108:13-35
+	android:exported
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:109:13-36
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:107:13-66
+intent-filter#cn.jpush.android.intent.DaemonService+com.example.news
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:110:13-113:29
+action#cn.jpush.android.intent.DaemonService
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:111:17-80
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:111:25-77
+receiver#cn.jpush.android.service.PushReceiver
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:118:9-136:20
+	android:enabled
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:120:13-35
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:119:13-65
+intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.example.news
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:121:13-124:29
+	android:priority
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:121:28-51
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:122:17-94
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:122:25-91
+intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:125:13-128:29
+action#android.intent.action.USER_PRESENT
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:126:17-77
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:126:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:127:17-79
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:127:25-76
+intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:130:13-135:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:131:17-78
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:131:25-75
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:132:17-80
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:132:25-77
+data
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:134:17-50
+	android:scheme
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:134:23-47
+receiver#cn.jpush.android.service.AlarmReceiver
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:139:9-99
+	android:exported
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:139:73-97
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:139:19-72
+receiver#com.example.jpushdemo.MyReceiver
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:142:9-154:20
+	android:enabled
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:145:13-35
+	android:exported
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:144:13-37
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:143:13-60
+intent-filter#cn.jpush.android.intent.CONNECTION+cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+com.example.news
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:146:13-153:29
+action#cn.jpush.android.intent.REGISTRATION
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:147:17-79
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:147:25-76
+action#cn.jpush.android.intent.MESSAGE_RECEIVED
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:148:17-83
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:148:25-80
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:149:17-88
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:149:25-85
+action#cn.jpush.android.intent.NOTIFICATION_OPENED
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:150:17-86
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:150:25-83
+action#cn.jpush.android.intent.CONNECTION
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:151:17-77
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:151:25-74
+meta-data#JPUSH_CHANNEL
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:157:9-84
+	android:value
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:157:49-82
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:157:20-48
+meta-data#JPUSH_APPKEY
+ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:158:9-91
+	android:value
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:158:48-88
+	android:name
+		ADDED from D:\study\study\android_demo\news\JPushExample(571418)\AndroidManifest.xml:158:20-47

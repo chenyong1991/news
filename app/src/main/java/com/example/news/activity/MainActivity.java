@@ -44,10 +44,14 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.smssdk.EventHandler;
+import cn.smssdk.SMSSDK;
+import cn.smssdk.gui.RegisterPage;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -98,13 +102,48 @@ public class MainActivity extends AppCompatActivity {
 
                 if (App.user != null) {
 
+
                     //显示更换头像对话框
                     showDialog();
 
                 } else {
-                    //如果没有登录用户则跳转到登录注册页面
-                    Intent intent = new Intent(MainActivity.this, InfoActivity.class);
-                    startActivityForResult(intent, Constant.GET_IMAGE_FROM_SERVICE);
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+                    builder.setItems(new String[]{"手机注册", "邮箱注册"}, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            switch (which) {
+                                case 0:
+                                    //打开注册页面
+                                    RegisterPage registerPage = new RegisterPage();
+                                    registerPage.setRegisterCallback(new EventHandler() {
+                                        public void afterEvent(int event, int result, Object data) {
+                                            // 解析注册结果
+                                            if (result == SMSSDK.RESULT_COMPLETE) {
+                                                @SuppressWarnings("unchecked")
+                                                HashMap<String, Object> phoneMap = (HashMap<String, Object>) data;
+                                                String country = (String) phoneMap.get("country");
+                                                String phone = (String) phoneMap.get("phone");
+
+                                                // 提交用户信息（此方法可以不调用）
+                                                registerUser(country, phone);
+                                            }
+                                        }
+                                    });
+                                    registerPage.show(MainActivity.this);
+                                    break;
+                                case 1:
+                                    //如果没有登录用户则跳转到登录注册页面
+                                    Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                                    startActivityForResult(intent, Constant.GET_IMAGE_FROM_SERVICE);
+                                    break;
+                            }
+
+                        }
+                    }).show();
+
 
                 }
 
@@ -139,6 +178,13 @@ public class MainActivity extends AppCompatActivity {
             //给当前数据库设置数据改变监听器
             App.ref.child(App.user.getUid()).addValueEventListener(postListener);
         }
+    }
+
+    private void registerUser(String country, String phone) {
+
+        Toast.makeText(this, phone, Toast.LENGTH_SHORT).show();
+
+
     }
 
     /**
@@ -198,6 +244,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 切换片段
+     *
      * @param index
      */
     private void replaceFragment(int index) {
@@ -302,7 +349,7 @@ public class MainActivity extends AppCompatActivity {
                 //非常大的图片流
                 InputStream in = contentResolver.openInputStream(imgUri);
 
-                Rect rect = new Rect(0,0,96,96);
+                Rect rect = new Rect(0, 0, 96, 96);
                 BitmapFactory.Options opts = new BitmapFactory.Options();
 
                 opts.inSampleSize = 5;
